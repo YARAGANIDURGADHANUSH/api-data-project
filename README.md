@@ -1,8 +1,8 @@
 # API Data Retrieval, Processing, and Visualization Project
 
-This repository contains a Python-based data processing project demonstrating REST API integration, SQLite database usage, CSV data ingestion, and data visualization using Matplotlib. The repository also includes AI/ML trainee assessment work organized into separate folders.
+This repository contains a Python-based data processing project demonstrating REST API integration, SQLite database usage, CSV data ingestion, and basic data visualization using Matplotlib. The repository also includes AI/ML trainee assessment submissions organized into separate folders.
 
-Repository Structure
+Repository structure:
 
 api-data-project/
 ├── ai-ml-trainee-assessment-1/
@@ -17,58 +17,55 @@ api-data-project/
 ├── .gitignore
 └── README.md
 
-Project Overview
+Project overview
 
-This project demonstrates basic data engineering and Python automation concepts through practical scripts. The workflow includes fetching data from a REST API, storing API data in an SQLite database, importing CSV data into database tables, organizing files using Python automation, and creating simple data visualizations.
+The project demonstrates basic data handling workflows using Python. It includes fetching data from an API, storing data in an SQLite database, importing CSV records, performing simple automation tasks, and generating visual output.
 
-Assessment 1 – Python Data Processing
+Assessment 1
 
-The folder ai-ml-trainee-assessment-1 contains multiple Python scripts demonstrating different data handling tasks.
+The folder ai-ml-trainee-assessment-1 contains Python scripts related to data processing.
 
-api_fetch.py fetches data from an online API, processes JSON responses, and stores records inside an SQLite database. It demonstrates HTTP requests, JSON parsing, and database operations.
+api_fetch.py retrieves data from an online API and stores it in an SQLite database.
 
-csv_to_db.py reads user data from a CSV file and inserts records into an SQLite database table using Python’s CSV and SQLite modules.
+csv_to_db.py reads data from users.csv and inserts the records into a database table.
 
-visualization.py uses sample student score data to calculate averages and generate a bar chart using Matplotlib for basic visualization.
+visualization.py processes sample student score data and generates a simple bar chart using Matplotlib.
 
-complex Python code.py organizes files inside a target directory based on file extensions such as images, documents, videos, and archives, demonstrating file handling and automation using Python.
+complex Python code.py demonstrates file organization by sorting files into folders based on file type.
 
-complex database code.py demonstrates API data fetching combined with SQLite database creation and storage operations.
+complex database code.py shows database creation and API data storage using SQLite.
 
-users.csv is a sample dataset containing user names and email addresses used for database insertion.
+users.csv is a sample dataset containing user names and email addresses.
 
-Assessment 2 – AI/ML Submission
+Assessment 2
 
 The folder ai-ml-trainee-assessment-2 contains AI_ML_Assessment.pdf, which includes the AI/ML assessment submission document.
 
-Technologies Used
+Technologies used
 
-Python 3, Requests library, SQLite3, CSV module, and Matplotlib.
+Python 3, Requests, SQLite3, CSV module, and Matplotlib.
 
-Setup Instructions
+Setup
 
-Clone the repository using:
+Clone the repository:
 git clone https://github.com/YARAGANIDURGADHANUSH/api-data-project.git
 
-Navigate into the project directory:
+Move into the project directory:
 cd api-data-project
 
-Install required dependencies:
+Install dependencies:
 pip install requests matplotlib
 
-Running the Project
+Run the project
 
-Navigate to the assessment folder:
 cd ai-ml-trainee-assessment-1
-
-Run scripts individually:
 python api_fetch.py
 python csv_to_db.py
 python visualization.py
 
-Learning Outcomes
+Learning outcomes
 
-This project demonstrates understanding of REST API integration, SQLite database operations, CSV data ingestion, Python file automation, basic data visualization, and project organization using GitHub.
+Understanding REST API usage, SQLite database operations, CSV data handling, Python automation, and basic visualization.
 
 Author
 
