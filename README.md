@@ -1,156 +1,175 @@
 # API Data Retrieval, Processing, and Visualization Project
 
-## 📌 Project Overview
+This repository contains a Python-based data processing project demonstrating REST API integration, SQLite database usage, CSV data ingestion, and data visualization using Matplotlib.
 
-This project demonstrates an end-to-end data engineering workflow using Python.
-It covers REST API data retrieval, local database storage using SQLite, CSV data ingestion, data processing, and visualization.
-
-The implementation simulates real-world backend and data processing tasks commonly performed in software development and data engineering roles.
+The repository also includes AI/ML trainee assessment work organized into separate folders.
 
 ---
 
-## 🎯 Problem Statement Implementation
+## Repository Structure
 
-### 1️⃣ API Data Retrieval and Storage
 
-* Fetches structured JSON data from an external REST API.
-* Parses API responses using Python.
-* Stores retrieved records into a local SQLite database.
-* Displays stored data for verification.
-
-**File:** `api_fetch.py`
-
-**Concepts Used**
-
-* REST API integration (Requests library)
-* JSON parsing
-* SQLite database connectivity
-* Table creation and data insertion
-
----
-
-### 2️⃣ Data Processing and Visualization
-
-* Processes student score data.
-* Calculates average score.
-* Generates a bar chart visualization.
-
-**File:** `visualization.py`
-
-**Concepts Used**
-
-* Data processing in Python
-* Statistical calculation
-* Data visualization using Matplotlib
-
----
-
-### 3️⃣ CSV Data Import to Database
-
-* Reads structured user data from a CSV file.
-* Inserts records into SQLite database tables.
-* Verifies successful database insertion.
-
-**File:** `csv_to_db.py`
-
-**Concepts Used**
-
-* CSV file handling
-* Database schema creation
-* Parameterized SQL queries
-* Data persistence
-
----
-
-## 🧰 Technologies Used
-
-* Python 3
-* SQLite3
-* Requests
-* Matplotlib
-* VS Code
-* Git & GitHub
-
----
-
-## 📁 Project Structure
-
-```
 api-data-project/
 │
-├── api_fetch.py        # API data retrieval & storage
-├── csv_to_db.py        # CSV to database import
-├── visualization.py    # Data visualization
-├── users.csv           # Sample dataset
-├── database.db         # SQLite database
+├── ai-ml-trainee-assessment-1/
+│ ├── api_fetch.py
+│ ├── complex Python code.py
+│ ├── complex database code.py
+│ ├── csv_to_db.py
+│ ├── users.csv
+│ └── visualization.py
+│
+├── ai-ml-trainee-assessment-2/
+│ └── AI_ML_Assessment.pdf
+│
+├── .gitignore
 └── README.md
-```
+
 
 ---
 
-## ⚙️ Setup Instructions
+## Project Overview
+
+This project demonstrates basic data engineering and Python automation concepts through practical scripts.
+
+The workflow includes:
+
+- Fetching data from a REST API
+- Storing API data in an SQLite database
+- Importing CSV data into database tables
+- Performing file organization using Python
+- Creating simple data visualizations
+
+---
+
+## Assessment 1 – Python Data Processing
+
+Located in:
+
+
+ai-ml-trainee-assessment-1/
+
+
+### 1. `api_fetch.py`
+- Fetches data from an online API (`jsonplaceholder.typicode.com`)
+- Converts JSON response into structured format
+- Stores records inside an SQLite database
+- Creates table if it does not exist
+
+**Concepts Used**
+- HTTP requests
+- JSON parsing
+- SQLite database operations
+
+---
+
+### 2. `csv_to_db.py`
+- Reads user data from `users.csv`
+- Creates a database table
+- Inserts CSV records into SQLite database
+
+**Concepts Used**
+- CSV handling
+- Database insertion
+- Data persistence
+
+---
+
+### 3. `visualization.py`
+- Uses sample student score data
+- Calculates average score
+- Generates a bar chart using Matplotlib
+
+**Concepts Used**
+- Data processing
+- Basic analytics
+- Visualization
+
+---
+
+### 4. `complex Python code.py`
+- Organizes files inside a target folder
+- Sorts files based on extensions such as images, documents, videos, and archives
+
+**Concepts Used**
+- File handling
+- OS operations
+- Automation using Python
+
+---
+
+### 5. `complex database code.py`
+- Demonstrates database creation and API data storage using SQLite
+- Similar workflow combining API fetching and database handling
+
+---
+
+### 6. `users.csv`
+Sample dataset containing user names and email addresses used for database insertion.
+
+---
+
+## Assessment 2 – AI/ML Submission
+
+Located in:
+
+
+ai-ml-trainee-assessment-2/
+
+
+Contains:
+
+- **AI_ML_Assessment.pdf**  
+  Documentation submission including self-rating and AI/ML assessment responses.
+
+---
+
+## Technologies Used
+
+- Python 3
+- Requests
+- SQLite3
+- CSV Module
+- Matplotlib
+
+---
+
+## Setup Instructions
 
 ### 1. Clone Repository
 
-```
+```bash
 git clone https://github.com/YARAGANIDURGADHANUSH/api-data-project.git
 cd api-data-project
-```
-
-### 2. Create Virtual Environment
-
-```
-python -m venv .venv
-.venv\Scripts\activate
-```
-
-### 3. Install Dependencies
-
-```
+2. Install Dependencies
 pip install requests matplotlib
-```
+Running the Scripts
 
----
+Navigate to the first assessment folder:
 
-## ▶️ How to Run
+cd ai-ml-trainee-assessment-1
 
-Run the scripts in the following order:
+Run scripts individually:
 
-```
 python api_fetch.py
 python csv_to_db.py
 python visualization.py
-```
+Learning Outcomes
 
----
+This project demonstrates understanding of:
 
-## ✅ Expected Outputs
+REST API integration in Python
 
-* API data stored in SQLite database (`posts` table)
-* CSV data inserted into database (`users` table)
-* Bar chart visualization of student scores
-* Database viewable using SQLite Viewer extension
+SQLite database operations
 
----
+CSV data ingestion
 
-## 📚 Learning Outcomes
+Python file automation
 
-* REST API handling using Python
-* Database operations with SQLite
-* CSV data ingestion workflow
-* Data visualization techniques
-* Version control using GitHub
-* Project structuring for real-world applications
+Basic data visualization
 
----
+Project organization using GitHub
 
-## 👨‍💻 Author
-
-**Durga Dhanush Yaragani**
-Final Year B.Tech Student
-Position: AI/ML Trainee
----
-
-## 🔗 Repository Link
-
-https://github.com/YARAGANIDURGADHANUSH/api-data-project
+Author:
+Durga Dhanush Yaragani
+Post: AI/ML Trainee 
