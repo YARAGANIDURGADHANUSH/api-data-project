@@ -4,18 +4,7 @@ This repository contains a Python-based data processing project demonstrating RE
 
 Repository structure:
 
-api-data-project/
-├── ai-ml-trainee-assessment-1/
-│   ├── api_fetch.py
-│   ├── complex Python code.py
-│   ├── complex database code.py
-│   ├── csv_to_db.py
-│   ├── users.csv
-│   └── visualization.py
-├── ai-ml-trainee-assessment-2/
-│   └── AI_ML_Assessment.pdf
-├── .gitignore
-└── README.md
+<img width="284" height="251" alt="image" src="https://github.com/user-attachments/assets/8e2775ce-abb0-45a8-a74d-da61323de69e" />
 
 Project overview
 
