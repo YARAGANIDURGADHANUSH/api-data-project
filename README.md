@@ -148,7 +148,7 @@ python visualization.py
 
 **Durga Dhanush Yaragani**
 Final Year B.Tech Student
-
+Position: AI/ML Trainee
 ---
 
 ## 🔗 Repository Link
