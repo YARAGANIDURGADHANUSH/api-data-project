@@ -2,128 +2,233 @@
 
 This repository contains a Python-based data processing project demonstrating REST API integration, SQLite database usage, CSV data ingestion, and basic data visualization using Matplotlib. The repository also includes AI/ML trainee assessment submissions organized into separate folders.
 
-Repository structure:
-
+## 📂 Project Structure
 <img width="284" height="251" alt="image" src="https://github.com/user-attachments/assets/8e2775ce-abb0-45a8-a74d-da61323de69e" />
 
-Project Overview
-
-This project demonstrates basic data engineering and Python automation concepts through practical scripts.
+## 📌 Project Overview
 
 The workflow includes:
 
-Fetching data from a REST API
+- Fetching data from a REST API
+- Processing JSON responses
+- Storing API data in an SQLite database
+- Importing CSV data into database tables
+- Automating file organization using Python
+- Creating simple data visualizations
 
-Storing API data in an SQLite database
+---
 
-Importing CSV data into database tables
+---
 
-Performing file organization using Python
+## 🧠 Assessment 1 – Python Data Processing
 
-Creating simple data visualizations
+### 1️⃣ api_fetch.py
+Fetches data from an online REST API, processes JSON responses, and stores records inside an SQLite database.
 
-Assessment 1 – Python Data Processing
+**Concepts Used**
+- HTTP requests
+- JSON parsing
+- SQLite operations
 
-Location:
+---
 
-ai-ml-trainee-assessment-1/
-api_fetch.py
-
-Fetches data from an online API, processes JSON responses, and stores records inside an SQLite database.
-
-Concepts used:
-
-HTTP requests
-
-JSON parsing
-
-SQLite operations
-
-csv_to_db.py
-
+### 2️⃣ csv_to_db.py
 Reads user data from a CSV file and inserts records into an SQLite database table.
 
-Concepts used:
+**Concepts Used**
+- CSV handling
+- Database insertion
 
-CSV handling
+---
 
-Database insertion
-
-visualization.py
-
+### 3️⃣ visualization.py
 Uses sample student score data to calculate averages and generate a bar chart using Matplotlib.
 
-Concepts used:
+**Concepts Used**
+- Data processing
+- Data visualization
 
-Data processing
+---
 
-Visualization
-
-complex Python code.py
-
+### 4️⃣ complex_python_code.py
 Organizes files inside a target directory based on file extensions such as images, documents, videos, and archives.
 
-Concepts used:
+**Concepts Used**
+- File handling
+- OS automation
 
-File handling
+---
 
-OS automation
-
-complex database code.py
-
+### 5️⃣ complex_database_code.py
 Demonstrates API data fetching combined with SQLite database creation and storage.
 
-users.csv
+---
 
-Sample dataset containing user names and email addresses.
+### Dataset
+`users.csv` — Sample dataset containing user names and email addresses.
 
-Assessment 2 – AI/ML Submission
+---
+
+## 🤖 Assessment 2 – AI/ML Submission
+
+Location: 
+---
+
+## 🧠 Assessment 1 – Python Data Processing
+
+### 1️⃣ api_fetch.py
+Fetches data from an online REST API, processes JSON responses, and stores records inside an SQLite database.
+
+**Concepts Used**
+- HTTP requests
+- JSON parsing
+- SQLite operations
+
+---
+
+### 2️⃣ csv_to_db.py
+Reads user data from a CSV file and inserts records into an SQLite database table.
+
+**Concepts Used**
+- CSV handling
+- Database insertion
+
+---
+
+### 3️⃣ visualization.py
+Uses sample student score data to calculate averages and generate a bar chart using Matplotlib.
+
+**Concepts Used**
+- Data processing
+- Data visualization
+
+---
+
+### 4️⃣ complex_python_code.py
+Organizes files inside a target directory based on file extensions such as images, documents, videos, and archives.
+
+**Concepts Used**
+- File handling
+- OS automation
+
+---
+
+### 5️⃣ complex_database_code.py
+Demonstrates API data fetching combined with SQLite database creation and storage.
+
+---
+
+### Dataset
+`users.csv` — Sample dataset containing user names and email addresses.
+
+---
+
+## 🤖 Assessment 2 – AI/ML Submission
 
 Location:
+---
 
-ai-ml-trainee-assessment-2/
+## 🧠 Assessment 1 – Python Data Processing
+
+### 1️⃣ api_fetch.py
+Fetches data from an online REST API, processes JSON responses, and stores records inside an SQLite database.
+
+**Concepts Used**
+- HTTP requests
+- JSON parsing
+- SQLite operations
+
+---
+
+### 2️⃣ csv_to_db.py
+Reads user data from a CSV file and inserts records into an SQLite database table.
+
+**Concepts Used**
+- CSV handling
+- Database insertion
+
+---
+
+### 3️⃣ visualization.py
+Uses sample student score data to calculate averages and generate a bar chart using Matplotlib.
+
+**Concepts Used**
+- Data processing
+- Data visualization
+
+---
+
+### 4️⃣ complex_python_code.py
+Organizes files inside a target directory based on file extensions such as images, documents, videos, and archives.
+
+**Concepts Used**
+- File handling
+- OS automation
+
+---
+
+### 5️⃣ complex_database_code.py
+Demonstrates API data fetching combined with SQLite database creation and storage.
+
+---
+
+### Dataset
+`users.csv` — Sample dataset containing user names and email addresses.
+
+---
+
+## 🤖 Assessment 2 – AI/ML Submission
+
+Location: ai-ml-trainee-assessment-2/
+
 
 Contains:
+- **AI_ML_Assessment.pdf** — AI/ML assignment submission document.
 
-AI_ML_Assessment.pdf — AI/ML assessment submission document.
+---
 
-Technologies Used
+## ⚙️ Technologies Used
 
-Python 3
+- Python 3
+- Requests
+- SQLite3
+- CSV Module
+- Matplotlib
+- Git & GitHub
 
-Requests
+---
 
-SQLite3
+## 🚀 Setup Instructions
 
-CSV Module
+### 1. Clone Repository
 
-Matplotlib
-
-Setup Instructions
-Clone Repository
+```bash
 git clone https://github.com/YARAGANIDURGADHANUSH/api-data-project.git
 cd api-data-project
-Install Dependencies
+
+### 2. Install Dependencies
+```bash
 pip install requests matplotlib
-Running the Project
+
+## 3. Run the Project
+
 cd ai-ml-trainee-assessment-1
+
 python api_fetch.py
 python csv_to_db.py
 python visualization.py
-Learning Outcomes
 
-REST API integration in Python
+----
 
+🎯 Learning Outcomes
+
+REST API integration using Python
 SQLite database operations
-
 CSV data ingestion
-
 Python file automation
-
 Basic data visualization
-
 Project organization using GitHub
 
-Author
-
+👨‍💻 Author
 Durga Dhanush Yaragani
+Post: AI/ML Trainee
