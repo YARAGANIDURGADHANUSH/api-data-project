@@ -220,9 +220,7 @@ python visualization.py
 
 ----
 
-
-
-🎯 Learning Outcomes
+## 🎯 Learning Outcomes
 
 REST API integration using Python
 SQLite database operations
@@ -231,6 +229,6 @@ Python file automation
 Basic data visualization
 Project organization using GitHub
 
-👨‍💻 Author
+## 👨‍💻 Author
 Durga Dhanush Yaragani
 Post: AI/ML Trainee
