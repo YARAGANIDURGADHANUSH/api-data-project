@@ -1,16 +1,13 @@
 import requests
 import sqlite3
 
-# Step 1: Fetch data from API
 url = "https://jsonplaceholder.typicode.com/posts"
 response = requests.get(url)
 data = response.json()
 
-# Step 2: Connect to SQLite database
 conn = sqlite3.connect("database.db")
 cursor = conn.cursor()
 
-# Step 3: Create table
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS posts(
     id INTEGER,
@@ -19,7 +16,6 @@ CREATE TABLE IF NOT EXISTS posts(
 )
 """)
 
-# Step 4: Insert API data
 for item in data:
     cursor.execute(
         "INSERT INTO posts (id, title, body) VALUES (?, ?, ?)",
@@ -28,7 +24,6 @@ for item in data:
 
 conn.commit()
 
-# Step 5: Display data
 cursor.execute("SELECT * FROM posts LIMIT 5")
 rows = cursor.fetchall()
 
