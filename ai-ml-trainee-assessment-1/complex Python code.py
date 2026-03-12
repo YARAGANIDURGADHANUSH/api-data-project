@@ -1,7 +1,6 @@
 import os
 import shutil
 
-# Folder you want to organize
 TARGET_FOLDER = r"C:\Users\Sree\Downloads"
 
 
