@@ -1,11 +1,9 @@
 import csv
 import sqlite3
 
-# Connect to database
 conn = sqlite3.connect("database.db")
 cursor = conn.cursor()
 
-# Create users table
 cursor.execute("""
 CREATE TABLE IF NOT EXISTS users(
     name TEXT,
@@ -13,7 +11,6 @@ CREATE TABLE IF NOT EXISTS users(
 )
 """)
 
-# Read CSV and insert into database
 with open("users.csv", "r") as file:
     reader = csv.DictReader(file)
 
@@ -25,7 +22,6 @@ with open("users.csv", "r") as file:
 
 conn.commit()
 
-# Display inserted data
 cursor.execute("SELECT * FROM users")
 print("Users Table:")
 for row in cursor.fetchall():
