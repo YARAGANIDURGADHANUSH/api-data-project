@@ -1,39 +1,77 @@
 import requests
 import sqlite3
 
-# Step 1: Fetch data from API
-url = "https://jsonplaceholder.typicode.com/posts"
-response = requests.get(url)
-data = response.json()
+API_URL = "https://jsonplaceholder.typicode.com/posts"
+DB_NAME = "database.db"
 
-# Step 2: Connect to SQLite database
-conn = sqlite3.connect("database.db")
-cursor = conn.cursor()
 
-# Step 3: Create table
-cursor.execute("""
-CREATE TABLE IF NOT EXISTS posts(
-    id INTEGER,
-    title TEXT,
-    body TEXT
-)
-""")
+# Fetch data from API
+def fetch_api_data():
+    try:
+        response = requests.get(API_URL, timeout=10)
+        response.raise_for_status()
+        data = response.json()
+        print("API data fetched successfully.")
+        return data
+    except requests.exceptions.RequestException as e:
+        print("Error fetching API data:", e)
+        return []
 
-# Step 4: Insert API data
-for item in data:
-    cursor.execute(
-        "INSERT INTO posts (id, title, body) VALUES (?, ?, ?)",
-        (item["id"], item["title"], item["body"])
+
+# Create SQLite database and table
+def create_database():
+    conn = sqlite3.connect(DB_NAME)
+    cursor = conn.cursor()
+
+    cursor.execute("""
+    CREATE TABLE IF NOT EXISTS posts (
+        id INTEGER PRIMARY KEY,
+        title TEXT,
+        body TEXT
     )
+    """)
 
-conn.commit()
+    conn.commit()
+    return conn, cursor
 
-# Step 5: Display data
-cursor.execute("SELECT * FROM posts LIMIT 5")
-rows = cursor.fetchall()
 
-print("Sample Data from Database:")
-for row in rows:
-    print(row)
+# Insert API data into database
+def insert_data(cursor, data):
+    for item in data:
+        cursor.execute(
+            "INSERT OR IGNORE INTO posts (id, title, body) VALUES (?, ?, ?)",
+            (item["id"], item["title"], item["body"])
+        )
 
-conn.close()
+
+# Display sample records
+def display_data(cursor):
+    cursor.execute("SELECT * FROM posts LIMIT 5")
+    rows = cursor.fetchall()
+
+    print("\nSample Data from Database:")
+    for row in rows:
+        print(row)
+
+
+# Main pipeline
+def main():
+    data = fetch_api_data()
+
+    if not data:
+        print("No data to process.")
+        return
+
+    conn, cursor = create_database()
+
+    insert_data(cursor, data)
+    conn.commit()
+
+    display_data(cursor)
+
+    conn.close()
+    print("\nDatabase connection closed.")
+
+
+if __name__ == "__main__":
+    main()
